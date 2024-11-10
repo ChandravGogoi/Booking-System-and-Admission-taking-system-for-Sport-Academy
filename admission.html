@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UASA|Admissions</title>
+    <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+  <header>
+    <h1>U A S A</h1>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="booking.html">BOOKING</a>
+    <a href="admission.html">ADMISSION</a>
+    <a href="login.html">LOGIN / SIGNUP</a>
+  </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to <br>UPPER ASSAM SHUTTLERS ACADEMY</h2>
+            <p>Join us to elevate your badminton skills and physical fitness!</p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-container">
+                <div class="course">
+                    <img src="g+p.png" alt="Gameplay + Physical Training">
+                    <h3>Gameplay + Physical Training</h3>
+                    <p>Comprehensive training combining gameplay techniques and physical conditioning.</p>
+                    <button class="enroll-btn" data-course="Gameplay + Physical Training">Enroll Now</button>
+                </div>
+                <div class="course">
+                    <img src="court1 trial.jpeg" alt="Gameplay Training">
+                    <h3>Only Gameplay Training</h3>
+                    <p>Focus on improving your badminton techniques and strategies.</p>
+                    <button class="enroll-btn" data-course="Only Gameplay Training">Enroll Now</button>
+                </div>
+
+                
+
+                <div class="course">
+                    <img src="court2 trial.jpeg" alt="Only Physical Training">
+                    <h3>Only Physical Training</h3>
+                    <p>Enhance your physical fitness and stamina for badminton.</p>
+                    <button class="enroll-btn" data-course="Only Physical Training">Enroll Now</button>
+                </div>
+
+                <div class="course">
+                    <img src="court1 trial.jpeg" alt=" Professional Gameplay Training">
+                    <h3>Professional Gameplay Training</h3>
+                    <p>Focus on improving your badminton techniques and strategies.</p>
+                    <button class="enroll-btn" data-course="Professional Gameplay Training">Enroll Now</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; UPPER ASSAM SHUTTLERS ACADEMY. All rights reserved.</p>
+    </footer>
+
+    <div id="enrollment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enroll in <span id="selected-course"></span></h2>
+            <form id="enrollment-form">
+                <input type="text" id="enroll-name" name="enroll-name" placeholder="Your Name" required>
+                <input type="email" id="enroll-email" name="enroll-email" placeholder="Your Email" required>
+                <input type="tel" id="enroll-phone" name="enroll-phone" placeholder="Your Phone Number" required>
+                <button type="submit">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admission.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UASA|Bookings</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <header>
+        <h1>U A S A</h1>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="booking.html">BOOKING</a>
+        <a href="admission.html">ADMISSION</a>
+        <a href="login.html">LOGIN / SIGNUP</a>
+      </header>
+      
+  <div class="container">
+    <h1>Badminton Court Booking</h1>
+    
+    <div class="court-grid">
+        <div class="court-card">
+            <img src="court1 trial.jpeg" alt="Court 1" class="court-image">
+            <div class="court-info">
+                <h3>Court 1</h3>
+                <p>Standard court with excellent lighting</p>
+            </div>
+        </div>
+        <div class="court-card">
+            <img src="court2 trial.jpeg" alt="Court 2" class="court-image">
+            <div class="court-info">
+                <h3>Court 2</h3>
+                <p>Professional-grade court with spectator seating</p>
+            </div>
+        </div>
+        <div class="court-card">
+            <img src="coourt3 trial.jpeg" alt="Court 3" class="court-image">
+            <div class="court-info">
+                <h3>Court 3</h3>
+                <p>Beginner-friendly court with coaching area</p>
+            </div>
+        </div>
+    </div>
+
+    <form id="bookingForm">
+        <div class="form-grid">
+            <div>
+                <label for="bookingDate">Date:</label>
+                <input type="date" id="bookingDate" required>
+            </div>
+            <div>
+                <label for="bookingTime">Time:</label>
+                <select id="bookingTime" required>
+                    <option value="">Select a time</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="17:00">05:00 PM</option>
+                    <option value="18:00">06:00 PM</option>
+                    <option value="19:00">07:00 PM</option>
+                    <option value="20:00">08:00 PM</option>
+                </select>
+            </div>
+            <div>
+                <label for="courtSelect">Select Court:</label>
+                <select id="courtSelect" required>
+                    <option value="">Choose a court</option>
+                    <option value="Court 1">Court 1</option>
+                    <option value="Court 2">Court 2</option>
+                    <option value="Court 3">Court 3</option>
+                </select>
+            </div>
+            <div>
+                <label for="duration">Duration (hours):</label>
+                <input type="number" id="duration" min="1" max="3" value="1" required>
+            </div>
+        </div>
+        <button type="submit" style="margin-top: 15px;">Book Now</button>
+    </form>
+
+    <div id="bookingDetails"></div>
+    <script src="booking.js"></script>
+</div>
+
+<footer>
+    <p>&copy; UPPER ASSAM SHUTTLERS ACADEMY. All rights reserved.</p>
+  </footer>
+</body>
+</html>
